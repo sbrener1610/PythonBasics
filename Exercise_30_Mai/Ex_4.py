@@ -2,7 +2,7 @@
 int_num=123
 float_num=43.24
 complex_num=3-2j
-string_string="How are you?"
+string_string="How are you?" # this is a string example
 Bool_num=True
 """
 Checking instances
