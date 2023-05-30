@@ -1,0 +1,5 @@
+print(123)
+print(43.24)
+print(4-1j)
+print("Hpw yre you?")
+print(True)
