@@ -11,7 +11,7 @@ Direction=2
 while (MovesCount<=5):
     choice=input("Where do you go? BACK/FORWARD/LEFT/RIGHT/DOWN: ")
 
-    if choice == "FORWARD":
+    if choice.upper() == "FORWARD":
         MovesCount+=1
         #print("The storm gets worse and you realize it is not the right direction.")
         Direction+=0
@@ -32,7 +32,7 @@ while (MovesCount<=5):
         flag=1
         """
 
-    elif choice == "LEFT":
+    elif choice.upper() == "LEFT":
         MovesCount+=1
         Direction+=3
         Direction%=4
@@ -52,7 +52,7 @@ while (MovesCount<=5):
         flag=1
         """
 
-    elif choice == "RIGHT":
+    elif choice.upper() == "RIGHT":
         MovesCount+=1
         Direction+=1
         Direction%=4
@@ -72,7 +72,7 @@ while (MovesCount<=5):
         flag=1
         """
 
-    elif choice == "BACK":
+    elif choice.upper() == "BACK":
         MovesCount+=1
         Direction+=2
         Direction%=4
@@ -82,7 +82,7 @@ while (MovesCount<=5):
         flag=1
         """
     
-    elif choice == "DOWN":
+    elif choice.upper() == "DOWN":
         print("You drown, you idiot.")
         break
          
@@ -98,11 +98,11 @@ while (MovesCount<=5):
     if Direction == 3:
         print("The storm gets worse and the sharks gather waiting for tasty food. You realize it is not the right direction.")
     if Direction == 0:
-        print("The direction seems right. You let the waves brings you ashore. You are safe.")
+        print("The direction seems right. You let the waves brings you ashore. You are safe. It took you ", MovesCount, " tries to solve it.")
         break
     if MovesCount == 5:
         print("You are exhausted and drown.")
-        break
+        
 
     
                          
