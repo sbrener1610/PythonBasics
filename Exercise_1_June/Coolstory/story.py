@@ -98,7 +98,7 @@ while (MovesCount<5):
     if Direction == 3:
         print("The storm gets worse and the sharks gather waiting for tasty food. You realize it is not the right direction.")
     if Direction == 0:
-        print("The direction seems right. You let the waves brings you ashore. You are safe. It took you ", MovesCount, " tries to solve it.")
+        print("The direction seems right. You let the waves carry you ashore. You are safe. It took you ", MovesCount, " tries to solve it.")
         break
     if MovesCount == 5:
         print("You are exhausted and drown.")
