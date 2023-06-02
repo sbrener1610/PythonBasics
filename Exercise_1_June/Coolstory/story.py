@@ -8,7 +8,7 @@ print("You are swimming in the sea, you go further and further away from the sho
 MovesCount=0
 Direction=2
 
-while (MovesCount<=5):
+while (MovesCount<5):
     choice=input("Where do you go? BACK/FORWARD/LEFT/RIGHT/DOWN: ")
 
     if choice.upper() == "FORWARD":
@@ -102,6 +102,7 @@ while (MovesCount<=5):
         break
     if MovesCount == 5:
         print("You are exhausted and drown.")
+        
         
 
     
